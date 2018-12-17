@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My very first portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoMoraes21/portfolio.git"
+  },
+  "author": "Thiago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiagoMoraes21/portfolio/issues"
+  },
+  "homepage": "https://github.com/ThiagoMoraes21/portfolio#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0"
+  }
+}
