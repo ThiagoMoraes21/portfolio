@@ -1,3 +1,93 @@
 <% include partials/header %>
-  <h1>MAIN BODY</h1>
+  <header class="jumbotron mb-0">
+      <h1 class="display-3 mt-5">Oi, me chamo Thiago</h1>
+      <p class="display-4">Sou desenvolvedor Web</p>
+  </header>
+
+  <main>
+    <%# SOBRE MIM %>
+    <article class="d-flex mb-0">
+      <div class="col-8 bg-light sobre text-center">
+        <h2>Sobre</h2>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+        <div class="social-medias">
+          <a href="#">g</a>
+          <a href="#">f</a>
+          <a href="#">h</a>
+        </div>
+      </div>
+      <div class="col-4 bg-dark foto">
+        <img src="" alt="">
+      </div>
+    </article>
+
+    <%# SKILLS %>
+    <article class="col-12 bg-secondary">
+      <h2 class="text-center">Skills</h2>
+      <ul class="d-flex justify-content-around">
+        <li>HTML+CSS</li>
+        <li>Javascript</li>
+        <li>NodeJS</li>
+        <li>Express</li>
+        <li>MongoDB</li>
+      </ul>
+    </article>
+
+    <%# PROJETOS %>
+    <article class="col-12 bg-light">
+      <h1 class="text-center">Projetos</h1>
+      <div class="d-flex projetos justify-content-between">
+        <div class="projeto">
+          <p>Nome do projeto</p>
+          <div class="bg-dark">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="projeto">
+          <p>Nome do projeto</p>
+          <div class="bg-dark">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="projeto">
+          <p>Nome do projeto</p>
+          <div class="bg-dark">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="projeto">
+          <p>Nome do projeto</p>
+          <div class="bg-dark">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="projeto">
+          <p>Nome do projeto</p>
+          <div class="bg-dark">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <%# CONTATO %>
+    <article class=" col-12 bg-secondary text-center">
+      <h1>Contate-me</h1>
+      <div class="contact-me">
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="nome">
+          <input type="email" name="" value="" placeholder="e-mail@gmail.com">
+        </form>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <button type="button" name="button">Enviar</button>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <article class="col-12 bg-dark">
+      <h1>Thiago</h1>
+    </article>
+  </footer>
+
 <% include partials/footer %>
