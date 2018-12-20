@@ -1,28 +1,44 @@
 <% include partials/header %>
-  <header class="jumbotron mb-0">
-      <h1 class="display-3 mt-5">Oi, me chamo Thiago</h1>
-      <p class="display-4">Sou desenvolvedor Web</p>
+  <header id="home" class="jumbotron mb-0">
+      <h1 class="bg-dark">Oi, me chamo <span>Thiago</span></h1>
+      <p class="bg-dark">Sou desenvolvedor Web</p>
   </header>
 
   <main>
-    <%# SOBRE MIM %>
-    <article class="d-flex mb-0">
-      <div class="col-8 bg-light sobre text-center">
-        <h2>Sobre</h2>
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
-        <div class="social-medias">
-          <a href="#">g</a>
-          <a href="#">f</a>
-          <a href="#">h</a>
+    <%#------------------%>
+    <%# SOBRE MIM        %>
+    <%#------------------%>
+    <article id="sobre" class="d-flex mb-0 sobre">
+      <div class="col-8 bg-light px-5 text-center">
+        <%# Text sobre mim mesmo %>
+        <div class="container px-5 py-4 my-4">
+          <h2>Sobre</h2>
+          <p class="px-3">There are many variations of passages of Lorem Ipsum available,
+            but the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly believable.
+             If you are going to use a passage of Lorem Ipsum, you need to be sure
+             there isn't anything embarrassing hidden in the middle of text. All the
+             Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+             as necessary, making this the first true generator on the Internet.
+           </p>
+        </div>
+
+      <%# Redes sociais %>
+      <div class="social-medias mb-3">
+          <a href="https://github.com/ThiagoMoraes21"><i class="fab fa-github"></i></a>
+          <a href="https://www.hackerrank.com/thiago4x70"><i class="fab fa-hackerrank"></i></a>
+          <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
-      <div class="col-4 bg-dark foto">
-        <img src="" alt="">
-      </div>
+
+      <%# Minha foto %>
+      <div class="col-4 bg-dark foto"></div>
     </article>
 
-    <%# SKILLS %>
-    <article class="col-12 bg-secondary">
+    <%#------------------%>
+    <%# SKILLS           %>
+    <%#------------------%>
+    <article id="skills" class="col-12 bg-secondary">
       <h2 class="text-center">Skills</h2>
       <ul class="d-flex justify-content-around">
         <li>HTML+CSS</li>
@@ -33,45 +49,31 @@
       </ul>
     </article>
 
-    <%# PROJETOS %>
-    <article class="col-12 bg-light">
+    <%#------------------%>
+    <%# PROJETOS         %>
+    <%#------------------%>
+    <article id="projetos" class="col-12 bg-light">
       <h1 class="text-center">Projetos</h1>
-      <div class="d-flex projetos justify-content-between">
-        <div class="projeto">
+      <div class="d-flex projetos justify-content-start">
+        <div class="projeto mr-2">
           <p>Nome do projeto</p>
           <div class="bg-dark">
-            <img src="" alt="">
+            <img src="https://source.unsplash.com/iwJscb2Ezsk" alt="">
           </div>
         </div>
-        <div class="projeto">
+        <div class="projeto mr-2">
           <p>Nome do projeto</p>
           <div class="bg-dark">
-            <img src="" alt="">
-          </div>
-        </div>
-        <div class="projeto">
-          <p>Nome do projeto</p>
-          <div class="bg-dark">
-            <img src="" alt="">
-          </div>
-        </div>
-        <div class="projeto">
-          <p>Nome do projeto</p>
-          <div class="bg-dark">
-            <img src="" alt="">
-          </div>
-        </div>
-        <div class="projeto">
-          <p>Nome do projeto</p>
-          <div class="bg-dark">
-            <img src="" alt="">
+            <img src="https://source.unsplash.com/_EC_ErY4DQA" alt="">
           </div>
         </div>
       </div>
     </article>
 
-    <%# CONTATO %>
-    <article class=" col-12 bg-secondary text-center">
+    <%#------------------%>
+    <%# CONTATO          %>
+    <%#------------------%>
+    <article id="contato" class=" col-12 bg-secondary text-center">
       <h1>Contate-me</h1>
       <div class="contact-me">
         <form class="" action="index.html" method="post">
@@ -84,6 +86,9 @@
     </article>
   </main>
 
+  <%#------------------%>
+  <%# FOOTER           %>
+  <%#------------------%>
   <footer>
     <article class="col-12 bg-dark">
       <h1>Thiago</h1>
