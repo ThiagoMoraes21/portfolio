@@ -1,7 +1,9 @@
 <% include partials/header %>
   <header id="home" class="jumbotron mb-0">
+    <div class="apresentacao">
       <h1 class="bg-dark">Oi, me chamo <span>Thiago</span></h1>
       <p class="bg-dark">Sou desenvolvedor Web</p>
+    </div>
   </header>
 
   <main>
@@ -12,8 +14,8 @@
       <div class="col-8 bg-light px-5 text-center">
         <%# Text sobre mim mesmo %>
         <div class="container px-5 py-4 my-4">
-          <h2>Sobre</h2>
-          <p class="px-3">There are many variations of passages of Lorem Ipsum available,
+          <h2 class="mb-4">Sobre</h2>
+          <p class="px-4 text-left">There are many variations of passages of Lorem Ipsum available,
             but the majority have suffered alteration in some form, by injected
             humour, or randomised words which don't look even slightly believable.
              If you are going to use a passage of Lorem Ipsum, you need to be sure
@@ -38,9 +40,9 @@
     <%#------------------%>
     <%# SKILLS           %>
     <%#------------------%>
-    <article id="skills" class="col-12 bg-secondary">
-      <h2 class="text-center">Skills</h2>
-      <ul class="d-flex justify-content-around">
+    <article id="skills" class="col-12 py-5 bg-secondary">
+      <h2 class="text-center mb-5">Skills</h2>
+      <ul class="d-flex px-5 justify-content-around">
         <li>HTML+CSS</li>
         <li>Javascript</li>
         <li>NodeJS</li>
@@ -52,8 +54,8 @@
     <%#------------------%>
     <%# PROJETOS         %>
     <%#------------------%>
-    <article id="projetos" class="col-12 bg-light">
-      <h1 class="text-center">Projetos</h1>
+    <article id="projetos" class="col-12 pb-4 bg-light">
+      <h1 class="text-center pt-3">Projetos</h1>
       <div class="d-flex projetos justify-content-start">
         <div class="projeto mr-2">
           <p>Nome do projeto</p>
@@ -67,32 +69,43 @@
             <img src="https://source.unsplash.com/_EC_ErY4DQA" alt="">
           </div>
         </div>
+        <div class="projeto mr-2">
+          <p>Nome do projeto</p>
+          <div class="bg-dark">
+            <img src="https://source.unsplash.com/rA5MU4pXnWE" alt="">
+          </div>
+        </div>
+        <div class="projeto mr-2">
+          <p>Nome do projeto</p>
+          <div class="bg-dark">
+            <img src="https://source.unsplash.com/37Hk9D4Ig_4" alt="">
+          </div>
+        </div>
       </div>
     </article>
 
     <%#------------------%>
     <%# CONTATO          %>
     <%#------------------%>
-    <article id="contato" class=" col-12 bg-secondary text-center">
-      <h1>Contate-me</h1>
-      <div class="contact-me">
-        <form class="" action="index.html" method="post">
-          <input type="text" name="" value="" placeholder="nome">
-          <input type="email" name="" value="" placeholder="e-mail@gmail.com">
-        </form>
-        <textarea name="name" rows="8" cols="80"></textarea>
-        <button type="button" name="button">Enviar</button>
+    <article id="contato" class="d-flex col-12 bg-secondary text-center">
+      <div class="contate-me">
+        <h1 class="pt-3">Contate-me</h1>
+        <div class="container">
+          <form action="index.html" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="" value="" placeholder="nome">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="" value="" placeholder="E-mail">
+            </div>
+          </form>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary px-4">Enviar</button>
+        </div>
       </div>
     </article>
   </main>
-
-  <%#------------------%>
-  <%# FOOTER           %>
-  <%#------------------%>
-  <footer>
-    <article class="col-12 bg-dark">
-      <h1>Thiago</h1>
-    </article>
-  </footer>
 
 <% include partials/footer %>

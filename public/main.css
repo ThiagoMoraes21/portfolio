@@ -1,12 +1,14 @@
+/**************/
+/* SETUP      */
+/**************/
 body {
   margin: 0;
   padding: 0;
 }
-/**************/
-/* SETUP      */
-/**************/
+
 :root {
   --dark: #000;
+  --dark-gray: #212121;
   --yellow: #FFEB3B;
   --dark-yellow: #FFEB3B;
 }
@@ -19,51 +21,72 @@ body {
   background: linear-gradient(102.53deg, #FFEB3B 47.59%, #FBC02D 100%);
 }
 
+.btn-primary {
+  background-color: var(--dark);
+  border-color: var(--dark);
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-gray);
+  border-color: var(--dark);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 /**************/
 /* NAVBAR     */
 /**************/
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255,255,255,.8);
-  font-weight: 300;
-  margin-left: 5px;
+  font-weight: 100;
+  margin-left: 35px;
 }
 
 
 /**************/
 /* HEADER     */
 /**************/
-header > h1 {
-  width: 50%;
-  margin: 10px auto;
-  margin-top: 8%;
-  font-size: 4em;
-  font-weight: 300;
-}
-
-header > p {
-  font-size: 2.3em;
-  font-weight: 100;
-  width: 35%;
-  margin: 10px auto;
-}
-
 span {
   color: var(--yellow);
+}
+
+.apresentacao h1 {
+  width: 100%;
+  font-size: 4em;
+  font-weight: 200;
+}
+
+.apresentacao p {
+  font-size: 2.3em;
+  font-weight: 100;
+  width: 85%;
+  margin: 10px auto;
+}
+
+.apresentacao {
+  width: 50%;
+  min-height: 200px;
+  position: relative;
+  top: 30%;
+  margin: 0 auto;
 }
 
 #home {
   background-image: url('./img/home-bg.jpg');
   background-size: cover;
   background-position: bottom center;
+  background-attachment: fixed;
   color: #fff;
 }
 
 .jumbotron {
-  margin-top: 56px;
+  /* margin-top: 56px; */
   margin-bottom: 2rem;
   background-color: #e9ecef;
   border-radius: 0;
-  height: 91vh;
+  height: 100vh;
   text-align: center;
 }
 
@@ -85,6 +108,8 @@ span {
   background-color: #000;
   line-height: 30px;
   border-radius: 50%;
+  margin-left: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .foto{
@@ -95,10 +120,21 @@ span {
   background-position: center;
 }
 
-/* .foto img {
-  width: 250px;
-  text-align: center;
-} */
+/**************/
+/* SKILLS      */
+/**************/
+#skills li{
+  list-style: none;
+  background-color: var(--dark);
+  color: #fff;
+  border-radius: 40px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 200;
+  font-size: 1.1em;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
 
 /**************/
 /* PROJETOS   */
@@ -117,4 +153,37 @@ img {
   top: 50px;
   padding-left: 5px;
   color: #fff;
+}
+
+/**************/
+/* CONTATO    */
+/**************/
+.contate-me {
+  width: 76vh;
+  height: 480px;
+  background-color: #fff;
+  margin: 40px auto;
+  border-radius: 13px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/**************/
+/* FOOTER     */
+/**************/
+footer {
+  height: 200px;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer li {
+  list-style: none;
+}
+
+.footer-social-medias a {
+  font-size: 1.3em;
 }
