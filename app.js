@@ -10,7 +10,7 @@ var indexRoute    = require('./routes/index'),
 app.use(express.static(__dirname + "/public"));
 app.set('view engine', 'ejs');
 
-//  requiring routes
+//  defining routes
 app.use('/', indexRoute);
 app.use('/project/', projectRoute);
 

@@ -144,15 +144,22 @@ img {
   height: 100%;
 }
 
-.projeto {
-  width: 300px;
+.row {
+  height: 400px;
 }
 
-.projeto p {
-  position: relative;
-  top: 50px;
-  padding-left: 5px;
-  color: #fff;
+.card {
+  height: 100%;
+  border: none;
+}
+
+.card-title {
+  display: inline;
+  padding: 5px;
+}
+
+.col {
+  padding: 3px;
 }
 
 /**************/
