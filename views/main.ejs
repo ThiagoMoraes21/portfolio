@@ -4,6 +4,7 @@
       <h1 class="bg-dark">Oi, me chamo <span>Thiago</span></h1>
       <p class="bg-dark">Sou desenvolvedor Web</p>
     </div>
+    <a class="scroll-angle" href="#sobre">Angle</a>
   </header>
 
   <main>
@@ -15,7 +16,7 @@
         <%# Text sobre mim mesmo %>
         <div class="container px-5 py-4 my-4">
           <h2 class="mb-4">Sobre</h2>
-          <p class="px-4 text-left">There are many variations of passages of Lorem Ipsum available,
+          <p class="px-4 ml-3 text-left">There are many variations of passages of Lorem Ipsum available,
             but the majority have suffered alteration in some form, by injected
             humour, or randomised words which don't look even slightly believable.
              If you are going to use a passage of Lorem Ipsum, you need to be sure
@@ -40,7 +41,7 @@
     <%#------------------%>
     <%# SKILLS           %>
     <%#------------------%>
-    <article id="skills" class="col-12 py-5 bg-secondary">
+    <%# <article id="skills" class="col-12 py-4 bg-secondary">
       <h2 class="text-center mb-5">Skills</h2>
       <ul class="d-flex px-5 justify-content-around">
         <li>HTML+CSS</li>
@@ -49,13 +50,47 @@
         <li>Express</li>
         <li>MongoDB</li>
       </ul>
+    </article> %>
+
+    <article id="skills"  class="col-12 py-4 bg-secondary">
+      <h2 class="text-center mb-5">Skills</h2>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <ul class="d-flex px-5 justify-content-around">
+              <li>HTML+CSS</li>
+              <li>Javascript</li>
+              <li>NodeJS</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <ul class="d-flex px-5 justify-content-around">
+              <li>MySQL</li>
+              <li>Bootstrap</li>
+              <li>SemanticUI</li>
+              <li>Git / SVN</li>
+              <li>Github</li>
+            </ul>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </article>
 
     <%#------------------%>
     <%# PROJETOS         %>
     <%#------------------%>
     <article id="projetos" class="col-12 pb-4 bg-light">
-      <h1 class="text-center pt-3">Projetos</h1>
+      <h1 class="text-center my-4">Projetos</h1>
       <div class="justify-content-start">
         <div class="row">
           <div class="col col-md-6 projeto">

@@ -32,7 +32,7 @@ body, html {
 
 .btn-primary:hover {
   background-color: var(--dark-gray);
-  border-color: var(--dark);
+  border-color: var(--dark-gray);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -40,7 +40,7 @@ body, html {
 /* NAVBAR     */
 /**************/
 nav {
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 17px rgba(33, 33, 33, 0.2);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -54,6 +54,24 @@ nav {
 /**************/
 span {
   color: var(--yellow);
+  font-family: 'Asul', sans-serif;
+  font-weight: normal;
+}
+
+#home {
+  background-image: url('./img/home-bg.jpg');
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.apresentacao {
+  width: 50%;
+  min-height: 200px;
+  position: relative;
+  top: 30%;
+  margin: 0 auto;
 }
 
 .apresentacao h1 {
@@ -69,22 +87,6 @@ span {
   margin: 10px auto;
 }
 
-.apresentacao {
-  width: 50%;
-  min-height: 200px;
-  position: relative;
-  top: 30%;
-  margin: 0 auto;
-}
-
-#home {
-  background-image: url('./img/home-bg.jpg');
-  background-size: cover;
-  background-position: bottom center;
-  background-attachment: fixed;
-  color: #fff;
-}
-
 .jumbotron {
   /* margin-top: 56px; */
   margin-bottom: 2rem;
@@ -92,6 +94,33 @@ span {
   border-radius: 0;
   height: 100vh;
   text-align: center;
+}
+
+.scroll-angle {
+  position: absolute;
+  margin: 50vh auto;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  font-size: 0;
+  animation: moveAngle 1.3s ease-in-out infinite;
+}
+
+/* Animação da seta */
+@keyframes moveAngle {
+  0% {
+    margin-top: 50vh;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 55vh;
+    opacity: 0;
+  }
 }
 
 /**************/
@@ -102,7 +131,8 @@ span {
   margin-top: -50px;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  height: 500px;
+  height: 525px;
+  background-color: #fff;
 }
 
 .social-medias a {
@@ -143,6 +173,39 @@ span {
   font-size: 1.1em;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+#skills a {
+  background-color: #000;
+}
+
+.carousel-inner {
+  top: -13px;
+}
+
+.carousel-control-prev {
+  left: -3px;
+  width: 40px;
+  height: 40px;
+  margin-top: -8px;
+  border-radius: 40px;
+}
+
+.carousel-control-next {
+  right: -3px;
+  width: 40px;
+  height: 40px;
+  margin-top: -8px;
+  border-radius: 40px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  color: var(--dark);
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+}
+
 
 /**************/
 /* PROJETOS   */
