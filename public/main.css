@@ -1,9 +1,10 @@
 /**************/
 /* SETUP      */
 /**************/
-body {
+body, html {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -38,12 +39,15 @@ body {
 /**************/
 /* NAVBAR     */
 /**************/
+nav {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255,255,255,.8);
   font-weight: 100;
   margin-left: 35px;
 }
-
 
 /**************/
 /* HEADER     */
@@ -93,8 +97,12 @@ span {
 /**************/
 /* SOBRE      */
 /**************/
-.sobre {
-  height: 450px;
+#sobre {
+  border-top: 50px solid transparent;
+  margin-top: -50px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  height: 500px;
 }
 
 .social-medias a {
@@ -144,6 +152,14 @@ img {
   height: 100%;
 }
 
+#projetos {
+  border-top: 50px solid transparent;
+  margin-top: -50px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  min-height: 500px;
+}
+
 .row {
   height: 400px;
 }
@@ -165,6 +181,14 @@ img {
 /**************/
 /* CONTATO    */
 /**************/
+#contato {
+  border-top: 50px solid transparent;
+  margin-top: -50px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  min-height: 500px;
+}
+
 .contate-me {
   width: 76vh;
   height: 480px;
