@@ -54,7 +54,6 @@ nav {
 /**************/
 span {
   color: var(--yellow);
-  font-family: 'Asul', sans-serif;
   font-weight: normal;
 }
 
@@ -88,7 +87,6 @@ span {
 }
 
 .jumbotron {
-  /* margin-top: 56px; */
   margin-bottom: 2rem;
   background-color: #e9ecef;
   border-radius: 0;
@@ -105,7 +103,7 @@ span {
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
   font-size: 0;
-  animation: moveAngle 1.3s ease-in-out infinite;
+  animation: moveAngle 1.9s ease-in-out infinite;
 }
 
 /* Animação da seta */
@@ -118,7 +116,7 @@ span {
     opacity: 1;
   }
   100% {
-    margin-top: 55vh;
+    margin-top: 58vh;
     opacity: 0;
   }
 }
@@ -151,7 +149,6 @@ span {
 }
 
 .foto{
-  /* height: 400px; */
   background-image: url('./img/myface.jpeg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -175,7 +172,9 @@ span {
 }
 
 #skills a {
-  background-color: #000;
+  background-color: 0;
+  opacity: 1;
+  transform: scale(1.3);
 }
 
 .carousel-inner {
@@ -196,10 +195,6 @@ span {
   height: 40px;
   margin-top: -8px;
   border-radius: 40px;
-}
-
-.carousel-control-next-icon, .carousel-control-prev-icon {
-  color: var(--dark);
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -227,19 +222,64 @@ img {
   height: 400px;
 }
 
+.col {
+  padding: 0px;
+}
+
 .card {
   height: 100%;
   border: none;
+  border-radius: 0;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.card-title {
-  display: inline;
-  padding: 5px;
+.card-img {
+  border-radius: 0;
+  transform: scale(1.12);
+  transition: all 0.2s ease-in-out;
 }
 
-.col {
-  padding: 3px;
+.card-img-overlay {
+  margin-top: 0px;
+  width: 90%;
+  height: 90%;
+  margin: 20px auto;
+  transform: scale(1.1);
+  border: 1px solid 0;
+  transition: all 0.2s ease-in-out;
 }
+
+.card-img-overlay h5 {
+  font-size: 2em;
+  padding-top: 90px;
+}
+
+.card-img-overlay p {
+  padding-top: 20px;
+  opacity: 0;
+  transform: scale(1.3);
+  transition: all 0.2s ease-in-out;
+}
+
+/* animação dos cards */
+.card:hover .card-img{
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+.card:hover .card-img-overlay {
+  transform: scale(1);
+  border: 1px solid #fff;
+}
+
+.card:hover .card-img-overlay p {
+  opacity: 1;
+  transform: scale(1);
+}
+
 
 /**************/
 /* CONTATO    */
