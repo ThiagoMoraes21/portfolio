@@ -11,7 +11,7 @@ body, html {
   --dark: #000;
   --dark-gray: #212121;
   --yellow: #FFEB3B;
-  --dark-yellow: #FFEB3B;
+  --dark-yellow: #FBC02D;
 }
 
 .bg-dark {
@@ -19,7 +19,10 @@ body, html {
 }
 
 .bg-secondary {
-  background: linear-gradient(102.53deg, #FFEB3B 47.59%, #FBC02D 100%);
+  background:
+    linear-gradient(
+      102.53deg, var(--yellow) 47.59%, var(--dark-yellow) 100%
+    );
 }
 
 .btn-primary {
@@ -338,15 +341,11 @@ footer {
   color: #fff;
 }
 
-footer a {
-  color: #fff;
-  text-decoration: underline;
-}
-
 footer li {
   list-style: none;
 }
 
 .footer-social-medias a {
   font-size: 1.3em;
+  color: #fff;
 }
