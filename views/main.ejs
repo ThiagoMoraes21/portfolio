@@ -1,9 +1,11 @@
 <% include partials/header %>
   <header id="home" class="jumbotron mb-0">
-    <div class="apresentacao">
-      <h1 class="bg-dark">Oi, me chamo <span>Thiago</span></h1>
-      <p class="bg-dark">Sou desenvolvedor Web</p>
-    </div>
+    <%# <div class="row"> %>
+      <div class="row col-12 col-sm-12 col-md-10 col-lg-7 apresentacao">
+        <h1 class="col-12 col-sm-12 col-md-12 bg-dark">Oi, me chamo <span class="logo">Thiago</span></h1>
+        <p id="subTitle" class="col-12 col-sm-12 col-md-10 bg-dark">Sou desenvolvedor <span class="type-it"></span></p>
+      </div>
+    <%# </div> %>
     <a class="scroll-angle" href="#sobre">Angle</a>
   </header>
 
@@ -11,11 +13,11 @@
     <%#------------------%>
     <%# SOBRE MIM        %>
     <%#------------------%>
-    <article id="sobre" class="d-flex mb-0 sobre">
-      <div class="col-8 bg-light px-5 text-center">
+    <article id="sobre" class="d-flex mb-0">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-6 px-0 bg-light text-center">
         <%# Text sobre mim mesmo %>
-        <div class="container px-5 py-4 my-4">
-          <h2 class="mb-4">Sobre</h2>
+        <div class="sobre">
+          <h2 class="my-4">Sobre</h2>
           <p class="px-4 ml-3 text-left">There are many variations of passages of Lorem Ipsum available,
             but the majority have suffered alteration in some form, by injected
             humour, or randomised words which don't look even slightly believable.
@@ -25,38 +27,26 @@
              as necessary, making this the first true generator on the Internet.
            </p>
         </div>
-
-      <%# Redes sociais %>
-      <div class="social-medias mb-3">
-          <a href="https://github.com/ThiagoMoraes21"><i class="fab fa-github"></i></a>
-          <a href="https://www.hackerrank.com/thiago4x70"><i class="fab fa-hackerrank"></i></a>
-          <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
-        </div>
+        <%# Redes sociais %>
+        <div class="social-medias mb-3">
+            <a href="https://github.com/ThiagoMoraes21"><i class="fab fa-github"></i></a>
+            <a href="https://www.hackerrank.com/thiago4x70"><i class="fab fa-hackerrank"></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
       </div>
 
       <%# Minha foto %>
-      <div class="col-4 bg-dark foto"></div>
+      <div class="col-12 col-md-4 col-lg-6 bg-dark foto"></div>
     </article>
 
     <%#------------------%>
     <%# SKILLS           %>
     <%#------------------%>
-    <%# <article id="skills" class="col-12 py-4 bg-secondary">
-      <h2 class="text-center mb-5">Skills</h2>
-      <ul class="d-flex px-5 justify-content-around">
-        <li>HTML+CSS</li>
-        <li>Javascript</li>
-        <li>NodeJS</li>
-        <li>Express</li>
-        <li>MongoDB</li>
-      </ul>
-    </article> %>
-
     <article id="skills"  class="col-12 py-4 bg-secondary">
       <h2 class="text-center mb-5">Skills</h2>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="row carousel-item active">
             <ul class="d-flex px-5 justify-content-around">
               <li>HTML+CSS</li>
               <li>Javascript</li>
@@ -65,7 +55,7 @@
               <li>MongoDB</li>
             </ul>
           </div>
-          <div class="carousel-item">
+          <div class="row carousel-item">
             <ul class="d-flex px-5 justify-content-around">
               <li>MySQL</li>
               <li>Bootstrap</li>
@@ -93,7 +83,7 @@
       <h1 class="text-center my-4">Projetos</h1>
       <div class="justify-content-start">
         <div class="row">
-          <div class="col projeto">
+          <div class="col-12 col-md-4 px-0 projeto">
             <div class="card bg-dark text-white">
               <img class="card-img" src="https://source.unsplash.com/iwJscb2Ezsk" alt="Card image">
               <div class="card-img-overlay">
@@ -104,7 +94,7 @@
             </div>
           </div>
 
-          <div class="col projeto">
+          <div class="col-12 col-md-4 px-0 projeto">
             <div class="card bg-dark text-white">
               <img class="card-img" src="https://source.unsplash.com/_EC_ErY4DQA" alt="Card image">
               <div class="card-img-overlay">
@@ -115,7 +105,7 @@
             </div>
           </div>
 
-          <div class="col projeto">
+          <div class="col-12 col-md-4 px-0 projeto">
             <div class="card bg-dark text-white">
               <img class="card-img" src="https://source.unsplash.com/rA5MU4pXnWE" alt="Card image">
               <div class="card-img-overlay">
@@ -128,7 +118,7 @@
         </div>
 
         <div class="row">
-          <div class="col projeto">
+          <div class="col-12 col-md-4 px-0 projeto">
             <div class="card bg-dark text-white">
               <img class="card-img" src="https://source.unsplash.com/_EC_ErY4DQA" alt="Card image">
               <div class="card-img-overlay">
@@ -139,7 +129,7 @@
             </div>
           </div>
 
-          <div class="col projeto">
+          <div class="col-12 col-md-4 px-0 projeto">
             <div class="card bg-dark text-white">
               <img class="card-img" src="https://source.unsplash.com/rA5MU4pXnWE" alt="Card image">
               <div class="card-img-overlay">
@@ -150,7 +140,7 @@
             </div>
           </div>
 
-          <div class="col projeto">
+          <div class="col-12 col-md-4 px-0 projeto">
             <div class="card bg-dark text-white">
               <img class="card-img" src="https://source.unsplash.com/iwJscb2Ezsk" alt="Card image">
               <div class="card-img-overlay">
@@ -168,7 +158,7 @@
     <%# CONTATO          %>
     <%#------------------%>
     <article id="contato" class="d-flex col-12 bg-secondary text-center">
-      <div class="contate-me">
+      <div class="col-lg-4 contate-me">
         <h1 class="pt-3">Contate-me</h1>
         <div class="container">
           <form action="index.html" method="post">

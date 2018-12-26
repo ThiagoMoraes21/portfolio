@@ -1,0 +1,3 @@
+[submodule "typeit"]
+	path = typeit
+	url = https://github.com/alexmacarthur/typeit.git
