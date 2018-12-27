@@ -1,0 +1,28 @@
+<% include partials/header %>
+  <header class="jumbotron bg-secondary project-header mb-0">
+      <img src="<%= project.image %>">
+      <div class="header-img-overlay">
+          <h1 class="col-12 col-sm-6 col-lg-4 project-title"><%= project.title %></h1>
+          <a class="btn btn-primary btn-github" href="<%= project.githubLink %>" role="button">Github</a>
+      </div>
+      <a class="scroll-angle project-scroll" href="#sobre-projeto">Angle</a>
+  </header>
+
+  <main id="sobre-projeto" class="d-flex">
+    <div class="d-flex sobre-projeto">
+        <div class="col-12 col-sm-12 col-md-8 p-5 bg-light">
+          <h3 class="text-center mb-4">Sobre o Projeto</h3>
+          <p class="text-left"><%= project.about %></p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 px-5 py-5 bg-secondary">
+          <h3 class="text-center mb-4">Tecnologias Usadas</h3>
+          <ul>
+            <% project.technologies.forEach(function(tech){ %>
+              <li> <%= tech %></li>
+            <% }) %>
+          </ul>
+        </div>
+    </div>
+  </main>
+
+<% include partials/footer %>
