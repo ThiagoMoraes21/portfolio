@@ -18,7 +18,7 @@ app.use('/', indexRoute);
 app.use('/project', projectRoute);
 
 // Create projects
-seedDB();
+// seedDB();
 
 //  if page not found
 app.get('*', function(req, res){
