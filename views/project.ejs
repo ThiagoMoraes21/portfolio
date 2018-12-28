@@ -3,7 +3,14 @@
       <img src="<%= project.image %>">
       <div class="header-img-overlay">
           <h1 class="col-12 col-sm-6 col-lg-4 project-title"><%= project.title %></h1>
-          <a class="btn btn-primary btn-github" href="<%= project.githubLink %>" role="button">Github</a>
+      </div>
+      <div class="projeto-links">
+        <%if(project.githubLink !== undefined){%>
+          <a class="btn btn-primary btn-header" href="<%= project.githubLink %>" role="button">Github</a>
+        <%}%>
+        <%if(project.siteLink !== undefined){%>
+          <a class="btn btn-secondary btn-header" href="<%= project.githubLink %>" role="button">Visitar Site</a>
+        <%}%>
       </div>
       <a class="scroll-angle project-scroll" href="#sobre-projeto">Angle</a>
   </header>
@@ -18,7 +25,7 @@
           <h3 class="text-center mb-4">Tecnologias Usadas</h3>
           <ul>
             <% project.technologies.forEach(function(tech){ %>
-              <li> <%= tech %></li>
+              <li class="mr-3"> <%= tech %></li>
             <% }) %>
           </ul>
         </div>
