@@ -302,7 +302,11 @@ img {
 
 .card-img-overlay h5 {
   font-size: 2em;
-  padding-top: 90px;
+  margin: 85px auto 7px auto;
+  width: 60%;
+  padding: 3px;
+  font-weight: 200;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .card-img-overlay p {
@@ -360,13 +364,18 @@ img {
 /*******************/
 .project-header ,.container-fluid {
   padding: 0;
-  filter: saturate(1);
+  overflow: hidden;
+}
+
+.project-header img {
+  transform: scale(0.9999);
 }
 
 .project-title {
   position: relative;
-  top: 30%;
+  top: 32%;
   margin: 0 auto;
+  min-width: 40vw;
   font-size: 4rem;
   color: #fff;
   background-color: #000;
@@ -385,7 +394,7 @@ img {
 
 .projeto-links {
   position: absolute;
-  top: 46vh;
+  top: 48vh;
   left: 40vw;
   width: 250px;
   text-align: center;
@@ -422,7 +431,7 @@ img {
   color: #fff;
   font-weight: 200;
   font-size: 1.3em;
-  width: 55%;
+  width: 57%;
   text-align: center;
   padding: 5px;
   margin-bottom: 5px;
@@ -501,22 +510,41 @@ footer li {
 
   .card-img-overlay {
     transform: scale(1);
-    border: 1px solid #fff;
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .card-img-overlay h5 {
+    margin-top: 40px;
   }
 
   .card-img-overlay p {
     opacity: 1;
     transform: scale(1);
+    padding: 0;
+    margin-top: 40px;
   }
 
   .card-img-overlay a {
     opacity: 1;
   }
 
-  .btn-github {
-    margin-top: 35vh;
-    padding-left: 20px;
-    padding-right: 20px;
+
+/* PAGINA DO PROJETO */
+  .project-header img {
+    transform: scale(0.999);
+  }
+
+  .project-title {
+    font-size: 3rem;
+  }
+
+  .projeto-links {
+    position: absolute;
+    top: 51vh;
+    left: 15vw;
+    width: 250px;
+    text-align: center;
   }
 
   #sobre-projeto .d-flex{
@@ -533,6 +561,7 @@ footer li {
     height: 90vh;
   }
 
+/* FOOTER */
   footer {
     display: flex;
     flex-direction: column;

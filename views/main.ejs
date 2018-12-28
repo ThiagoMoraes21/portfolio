@@ -14,7 +14,7 @@
     <%# SOBRE MIM        %>
     <%#------------------%>
     <article id="sobre" class="d-flex mb-0">
-      <div class="col-12 col-sm-12 col-md-8 col-lg-6 px-0 bg-light text-center">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-8 px-0 bg-light text-center">
         <%# Text sobre mim mesmo %>
         <div class="sobre">
           <h2 class="my-4">Sobre</h2>
@@ -36,7 +36,7 @@
       </div>
 
       <%# Minha foto %>
-      <div class="col-12 col-md-4 col-lg-6 bg-dark foto"></div>
+      <div class="col-12 col-md-4 col-lg-4 bg-dark foto"></div>
     </article>
 
     <%#------------------%>
@@ -81,86 +81,20 @@
     <%#------------------%>
     <article id="projetos" class="col-12 pb-4 bg-light">
       <h1 class="text-center my-4">Projetos</h1>
-      <%# <div class="justify-content-start">
-        <div class="row">
-          <div class="col-12 col-md-4 px-0 projeto">
-            <div class="card bg-dark text-white">
-              <img class="card-img" src="https://source.unsplash.com/iwJscb2Ezsk" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunksas necessary</p>
-                <a href="#" class="btn btn-light mt-3">Ver Projeto</a>
-              </div>
-            </div>
-          </div> %>
       <div class="justify-content-start">
         <div class="row">
-          <div class="col-12 col-md-4 px-0 projeto">
-            <div class="card bg-dark text-white">
-              <img class="card-img" src="<%= projects[0].image %>" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title"><%= projects[0].title %></h5>
-                <p><%= projects[0].summary %></p>
-                <a href="/project/<%= projects[0]._id %>" class="btn btn-light mt-3">Ver Projeto</a>
+            <% projects.forEach(function(project){ %>
+              <div class="col-12 col-md-6 col-lg-4 px-0 projeto">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="<%= project.image %>" alt="Card image">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title"><%= project.title %></h5>
+                      <p><%= project.summary %></p>
+                      <a href="/project/<%= project._id %>" class="btn btn-primary mt-3">Ver Projeto</a>
+                    </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4 px-0 projeto">
-            <div class="card bg-dark text-white">
-              <img class="card-img" src="https://source.unsplash.com/_EC_ErY4DQA" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunksas necessary</p>
-                <a href="#" class="btn btn-light mt-3">Ver Projeto</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4 px-0 projeto">
-            <div class="card bg-dark text-white">
-              <img class="card-img" src="https://source.unsplash.com/rA5MU4pXnWE" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunksas necessary</p>
-                <a href="#" class="btn btn-light mt-3">Ver Projeto</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-md-4 px-0 projeto">
-            <div class="card bg-dark text-white">
-              <img class="card-img" src="https://source.unsplash.com/_EC_ErY4DQA" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunksas necessary</p>
-                <a href="#" class="btn btn-light mt-3">Ver Projeto</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4 px-0 projeto">
-            <div class="card bg-dark text-white">
-              <img class="card-img" src="https://source.unsplash.com/rA5MU4pXnWE" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunksas necessary</p>
-                <a href="#" class="btn btn-light mt-3">Ver Projeto</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4 px-0 projeto">
-            <div class="card bg-dark text-white">
-              <img class="card-img" src="https://source.unsplash.com/iwJscb2Ezsk" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunksas necessary</p>
-                <a href="#" class="btn btn-light mt-3">Ver Projeto</a>
-              </div>
-            </div>
+            <% }) %>
           </div>
         </div>
       </div>
