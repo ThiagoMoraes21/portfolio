@@ -17,10 +17,11 @@ var data = [
                   Lorem Ipsum generators on the Internet tend to repeat predefined chunks
                   as necessary, making this the first true generator on the Internet.`
   },  {
-      title: 'Tech Blog',
-      image: 'https://source.unsplash.com/ZN97BfWuHhs',
+      title: 'Regular Blog',
+      // image: 'https://source.unsplash.com/ZN97BfWuHhs',
+      image: '../img/projects/blog.jpg',
       summary: 'Estudo aplicando a nova versão do Bootstrap, site sobre o museu de doces!',
-      technologies: ['Bootstrap 4', 'HTML5+CSS3', 'Javascript', 'NodeJS', 'Express', 'REST Patner'],
+      technologies: ['Bootstrap 4', 'HTML5+CSS3', 'Javascript', 'NodeJS', 'Express', 'REST Pattern'],
       githubLink: 'https://github.com/ThiagoMoraes21/WebDev_BootCamp/tree/master/Projects/Blog',
       about: `There are many variations of passages of Lorem Ipsum available,
                     but the majority have suffered alteration in some form, by injected

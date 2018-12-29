@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use('/', indexRoute);
 app.use('/project', projectRoute);
 
-// Create projects
+// Create projects in the DB
 // seedDB();
 
 //  if page not found
