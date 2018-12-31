@@ -9,16 +9,13 @@ var data = [
     summary: 'YelpCamp é um web-app onde você pode encontrar campings no mundo todo e muito mais!',
     technologies: ['HTML5+CSS3', 'Javascript', 'Bootstrap 3', 'MongoDB', 'NodeJS', 'Express'],
     githubLink: 'https://github.com/ThiagoMoraes21/WebDev_BootCamp/tree/master/Projects/YelpCamp',
-    about: `There are many variations of passages of Lorem Ipsum available,
-                  but the majority have suffered alteration in some form, by injected
-                  humour, or randomised words which don't look even slightly believable.
-                  If you are going to use a passage of Lorem Ipsum, you need to be sure
-                  there isn't anything embarrassing hidden in the middle of text. All the
-                  Lorem Ipsum generators on the Internet tend to repeat predefined chunks
-                  as necessary, making this the first true generator on the Internet.`
+    about: `Este é um dos projetos propostos no <a class="text-dark" href="https://www.udemy.com/the-web-developer-bootcamp/">The Web Developer Boot Camp</a>.
+     E se trata de um Web App no qual um usuário pode postar, avaliar e comentar Campings espalhado pelo mundo.<br><br> O app utiliza autenticação via
+     <a class="text-dark" href="http://www.passportjs.org/">Passaport js</a> para cadastro e login de usuários.
+	   Também foi implementado <a class="text-dark" href="https://www.npmjs.com/package/flash-message">Flash</a> para lidar com possíveis erros no servidor.
+     O servidor foi implementado usando <strong>NodeJS</strong> e <strong>Express</strong> bem como <strong>MongoDB</strong> para armazenar os dados produzidos pelos usuários.`
   },  {
       title: 'Regular Blog',
-      // image: 'https://source.unsplash.com/ZN97BfWuHhs',
       image: '../img/projects/blog.jpg',
       summary: 'Estudo aplicando a nova versão do Bootstrap, site sobre o museu de doces!',
       technologies: ['Bootstrap 4', 'HTML5+CSS3', 'Javascript', 'NodeJS', 'Express', 'REST Pattern'],
@@ -93,7 +90,6 @@ function seedDB(){
       console.log('Error trying to remove the projects: ' + err);
     }
     console.log('PROJECTS REMOVED!');
-
     // Add projects back
     data.forEach(function(seed){
       Project.create(seed, function(err, project){
@@ -104,7 +100,6 @@ function seedDB(){
         }
       });
     });
-
   });
 }
 
