@@ -39,18 +39,19 @@ var data = [
        com isto, associar as interações de um usuário à uma conta.`
     },
     {
-    title: 'CRM Solutions',
+    title: 'ERP Solutions',
     image: '../img/projects/bg_5.jpg',
     summary: 'Web-app que centraliza a comunicação de times dentro de uma empresa!',
     technologies: ['Java', 'Spring Boot', 'HTML5+CSS3', 'Javascript', 'Web Sockets', 'Bootstrap 3'],
     githubLink: 'https://github.com/ThiagoMoraes21/PI_3_Semestre',
-    about: `There are many variations of passages of Lorem Ipsum available,
-                  but the majority have suffered alteration in some form, by injected
-                  humour, or randomised words which don't look even slightly believable.
-                  If you are going to use a passage of Lorem Ipsum, you need to be sure
-                  there isn't anything embarrassing hidden in the middle of text. All the
-                  Lorem Ipsum generators on the Internet tend to repeat predefined chunks
-                  as necessary, making this the first true generator on the Internet.`
+    about: `Como projeto integrado do 3º Semestre da faculdade, escolhi fazer um software de ERP (Enterprise Resource Planning).
+    Pois, além de poder praticar o padrão REST em uma aplicação web, eu poderia aprender um pouco sobre <a class="text-dark" href="https://en.wikipedia.org/wiki/WebSocket">WebSockets</a>.
+    <br><br>
+    Utilizei como referência principal para construção do site este <a class="text-dark" href="https://www.callicoder.com/spring-boot-websocket-chat-example/">artigo</a> escrito por <strong>Rajeev Kumar Singh</strong>
+    em seu blog. No post Rajeev demostra como implementar de forma simples um servidor WebSocket utilizando <strong>Java</strong> e <a class="text-dark" href="http://spring.io/">Spring Boot</a>.
+    E para estabelicer a comunicação entre o client-side e o servidor, a aplicação usa as bibliotecas <a class="text-dark" href="https://github.com/sockjs">SockJS</a> e <a class="text-dark" href="https://github.com/jmesnil/stomp-websocket">Stomp js</a>.
+    <br><br>
+    Baseado na funcionalidade principal do app, fui capaz de adaptar o servidor para criar uma dashboard onde os usuários podem criar tarefas em uma To-do list.`
   },
   {
     title: 'Candy Museum',
