@@ -10,14 +10,15 @@ var data = [
     technologies: ['HTML5+CSS3', 'Javascript', 'Bootstrap 3', 'MongoDB', 'NodeJS', 'Express'],
     githubLink: 'https://github.com/ThiagoMoraes21/WebDev_BootCamp/tree/master/Projects/YelpCamp',
     about: `Este é um dos projetos propostos no <a class="text-dark" href="https://www.udemy.com/the-web-developer-bootcamp/">The Web Developer Boot Camp</a>.
-     E se trata de um Web App no qual o usuário pode postar, avaliar e comentar Campings espalhado pelo mundo.<br><br> O site utiliza autenticação via
-     <a class="text-dark" href="http://www.passportjs.org/">Passaport js</a> para cadastro e login de usuários.
+     E se trata de um Web App no qual o usuário pode postar, avaliar e comentar Campings espalhado pelo mundo.
+     <br><br>
+     O site utiliza autenticação via <a class="text-dark" href="http://www.passportjs.org/">Passaport js</a> para cadastro e login de usuários.
 	   Também foi implementado <a class="text-dark" href="https://www.npmjs.com/package/flash-message">Flash</a> para lidar com possíveis erros no servidor.
      O servidor foi implementado usando <strong>NodeJS</strong> e <strong>Express</strong> bem como <strong>MongoDB</strong> para armazenar os dados produzidos pelos usuários.
      <br><br>
-     	O site segue o padrão RESTful e faz uso do ciclo <a class="text-dark" href="https://www.codecademy.com/articles/what-is-crud">CRUD</a>
-      como modelo de armazenamento persistente (data persistence) do sistema.
-      Também foi utilizando o toolkit Gulp para otimização e automatização de tarefas do app.`
+     O site segue o padrão RESTful e faz uso do ciclo <a class="text-dark" href="https://www.codecademy.com/articles/what-is-crud">CRUD</a>
+     como modelo de armazenamento persistente (data persistence) do sistema.
+     Também foi utilizando o toolkit Gulp para otimização e automatização de tarefas do app.`
   },
   {
       title: 'Anything Blog',

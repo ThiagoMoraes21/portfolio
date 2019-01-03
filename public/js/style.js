@@ -10,17 +10,6 @@ new TypeIt('.type-it', {
   loop: true
 });
 
-
-// Navbar active class change when a nav link is clicked
-$('#navbarLinks a').click(function(){
-  $('#navbarLinks a').each(function(){
-    //  remove all active class from nav elements
-    this.classList.remove('active');
-  });
-  //  add active class to the one clicked
-  this.classList.add('active');
-});
-
 //  Add active class on scroll
 $(window).scroll(function() {
 		var scrollDistance = $(window).scrollTop()+52;
