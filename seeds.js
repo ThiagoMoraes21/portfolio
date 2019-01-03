@@ -41,7 +41,7 @@ var data = [
     },
     {
     title: 'ERP Solutions',
-    image: '../img/projects/bg_5.jpg',
+    image: '../img/projects/teamwork.svg',
     summary: 'Web-app que centraliza a comunicação de times dentro de uma empresa!',
     technologies: ['Java', 'Spring Boot', 'HTML5+CSS3', 'Javascript', 'Web Sockets', 'Bootstrap 3'],
     githubLink: 'https://github.com/ThiagoMoraes21/PI_3_Semestre',
@@ -91,17 +91,18 @@ var data = [
   },
   {
     title: 'To-do List',
-    image: '../img/projects/todolist.jpg',
+    image: '../img/projects/todolist.svg',
     summary: 'Simples app de to-do list, estudo de multiplas interações com javascript.',
-    technologies: ['HTML5+CSS3', 'Javascript', 'Jquery', 'Bootstrap 3'],
+    technologies: ['HTML5+CSS3', 'Javascript', 'Jquery', 'Bootstrap 3', 'Gulp'],
     githubLink: 'https://github.com/ThiagoMoraes21/WebDev_BootCamp/tree/master/Projects/ToDo_List',
-    about: `There are many variations of passages of Lorem Ipsum available,
-                  but the majority have suffered alteration in some form, by injected
-                  humour, or randomised words which don't look even slightly believable.
-                  If you are going to use a passage of Lorem Ipsum, you need to be sure
-                  there isn't anything embarrassing hidden in the middle of text. All the
-                  Lorem Ipsum generators on the Internet tend to repeat predefined chunks
-                  as necessary, making this the first true generator on the Internet.`
+    about: ` Clássico app de estudo, esse é mais um dos projetos propostos no <a class="text-dark" href="https://www.udemy.com/the-web-developer-bootcamp/">The Web Developer Boot Camp</a>.
+    Apesar de ser um dos projetos iniciais do curso, decidi coloca-lo na minha lista de projetos porque o app reúne uma série de técnicas e interação interessantes.
+    <br><br>
+    O objetivo deste projeto foi entender como funciona a manipulação do <strong>DOM</strong> utilizando <strong>jQuery</strong>.
+    O app é relativamente robusto para uma aplicação apresentada a iniciantes, pois faz uso de conceitos como responsividade de um site,
+    animações e efeitos com <strong>CSS</strong>. E serviu para refinar um pouco mais os meus conhecimentos sobre interfaces.
+    <br><br>
+    Também utilizei a toolkit <a class="text-dark" href="https://gulpjs.com/">Gulp</a>. para aprender os conceitos básicos da ferramenta e como otimizar e automatizar tarefas rotineiras de uma aplicação.`
   }
 ];
 
