@@ -75,15 +75,19 @@ var data = [
     title: 'Black Bird',
     image: '../img/projects/blackbird.png',
     summary: 'Estudo aplicando efeitos parallax em um site de roupas masculinas.',
-    technologies: ['HTML5+CSS3', 'Javascript', 'Jquery', 'Bootstrap 3', 'NodeJS', 'Express'],
+    technologies: ['HTML5+CSS3', 'Javascript', 'Jquery', 'Semantic UI', 'NodeJS', 'Express'],
     githubLink: 'https://github.com/ThiagoMoraes21/Projects/tree/master/Parallax_Zooming',
-    about: `There are many variations of passages of Lorem Ipsum available,
-                  but the majority have suffered alteration in some form, by injected
-                  humour, or randomised words which don't look even slightly believable.
-                  If you are going to use a passage of Lorem Ipsum, you need to be sure
-                  there isn't anything embarrassing hidden in the middle of text. All the
-                  Lorem Ipsum generators on the Internet tend to repeat predefined chunks
-                  as necessary, making this the first true generator on the Internet.`
+    about: `Uma adaptação de um projeto proposto na série de videos <strong>Parallax on The Web</strong> produzido pelo canal
+    <a class="text-dark" href="https://www.youtube.com/channel/UCyIe-61Y8C4_o-zZCtO4ETQ">DevTips</a>. A proposta da série é aplicar de forma prática
+    efeitos parallax de diferentes maneiras em uma aplicação web.
+    <br><br>
+    Adaptei o projeto para que fosse um site real e, para isso, utilizei o <a class="text-dark" href="https://semantic-ui.com/">Semantic UI</a> para
+    fazer a interface responsiva e dinâmica. Também utilizei NodeJS e Express, como sempre, para fazer o back-end do site. Para o design, a plataforma
+    <a class="text-dark" href="https://www.figma.com/">Figma</a> foi utilizada para fazer os mockups e protótipos do projeto.
+    <br><br>
+    Esse projeto serviu para ganhar a compreensão de como um mesmo efeito pode ser implementado de diferentes formas dentro de uma aplicação.
+    E, para uma próxima versão desse projeto, pretendo utilizar o <strong>AJAX</strong> para carregar o conteúdo do banco de dados dinamicamente na página.
+    O deploy do site foi feito usando a plataforma <a class="text-dark" href="https://www.heroku.com/">Heroku</a>.`
   },
   {
     title: 'To-do List',
