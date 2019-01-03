@@ -1,16 +1,26 @@
-var express  = require('express'),
-    app      = express(),
-    port     = process.env.PORT || 3000,
-    mongoose = require('mongoose'),
-    seedDB   = require('./seeds');
+let express    = require('express'),
+    mongoose   = require('mongoose'),
+    seedDB     = require('./seeds'),
+    bodyParser = require('body-parser'),
+    app        = express(),
+    port       = process.env.PORT || 3000;
 
 //  requiring routes
-var indexRoute   = require('./routes/index'),
+let indexRoute   = require('./routes/index'),
     projectRoute = require('./routes/projects');
 
+//===========
 //  SETUP
+//===========
+//  Connecting to mongoDB
 mongoose.connect('mongodb://localhost/portfolio', { useNewUrlParser: true });
-app.use(express.static(__dirname + "/public"));
+
+//  Setup body-parser
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+//  Static folder and view engine
+app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 
 //  defining routes
@@ -20,7 +30,7 @@ app.use('/project', projectRoute);
 // Create projects in the DB
 // seedDB();
 
-//  if page not found
+//  If page not found
 app.get('*', function(req, res){
   res.send('ERROR 404 (PAGE NOT FOUND)');
 });
