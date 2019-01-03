@@ -56,16 +56,19 @@ var data = [
   {
     title: 'Candy Museum',
     image: 'https://source.unsplash.com/pVPXeT7rIu0',
-    summary: 'Estudo aplicando a nova versão do Bootstrap, site sobre o museu de doces!',
-    technologies: ['Bootstrap 4', 'HTML5+CSS3', 'Javascript', 'NodeJS'],
+    summary: 'Web site sobre um museu de doces, estudo sobre as novas funcionalidade do Bootstrap 4!',
+    technologies: ['Bootstrap 4', 'HTML5+CSS3', 'Javascript', 'NodeJS', 'Express', 'Gulp'],
     githubLink: 'https://github.com/ThiagoMoraes21/WebDev_BootCamp/tree/master/Code/Bootstrap4_Code/13_Museum_Of_Candy',
-    about: `There are many variations of passages of Lorem Ipsum available,
-                  but the majority have suffered alteration in some form, by injected
-                  humour, or randomised words which don't look even slightly believable.
-                  If you are going to use a passage of Lorem Ipsum, you need to be sure
-                  there isn't anything embarrassing hidden in the middle of text. All the
-                  Lorem Ipsum generators on the Internet tend to repeat predefined chunks
-                  as necessary, making this the first true generator on the Internet.`
+    about: `Web site responsivo sobre um museu de doces. Esse projeto, proposto no <a class="text-dark" href=https://www.udemy.com/the-web-developer-bootcamp/">The Web Developer Boot Camp</a>,
+    tem como objetivo demonstrar as principais mudanças trazidas na versão 4 do Bootstrap.
+    <br><br>
+    Nesta nova versão do Bootstrap temos como principal alteração do framework a migração de seus componentes
+    e utilitários para o Flexbox. O projeto também implementa algumas funcionalidades novas em javascript
+    fazendo uso dos plugins oferecidos pelo framework.
+    <br><br>
+    O design do projeto foi feito utilizando a plataforma <a class="text-dark" href="http://figma.com">Figma</a> e seu deploy foi feito na
+    plataforma <a class="text-dark" href="https://www.heroku.com/">Heroku</a>. No back-end utilizei NodeJs e Express para lidar com os https requests tornando o
+    site dinâmico. O toolkit Gulp foi usado para otimização das imagens e scripts.`
   },
   {
     title: 'Black Bird',
