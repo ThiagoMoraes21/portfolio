@@ -8,8 +8,8 @@ const express    = require('express'),
 router.get('/', function(req, res){
   Project.find({}, function(err, allProjects){
     if (err) {
-      // HANDLE THIS LATTER
-      console.log('Error trying to find the projects: ' + err);
+      req.flash('error', 'Ops! Os projetos não foram encontrados...');
+      return res.redirect('/');
     } else {
       res.render('main', {projects: allProjects});
     }
@@ -56,11 +56,13 @@ router.post('/', function(req, res){
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-          return console.log(error);
+        req.flash('error', 'Ops! Algo deu errado...Por favor, tente novamente :)');
+        return res.redirect('back');
       }
       console.log('Message sent: %s', info.messageId);
       // Preview only available when sending through an Ethereal account
       console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+      req.flash('success', 'Yeah! Mensagem enviada com sucesso :)');
       res.redirect('/');
   });
 });

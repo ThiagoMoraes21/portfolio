@@ -67,6 +67,26 @@ img {
   text-decoration: underline;
 }
 
+/* setup alert messages */
+.alert {
+  transition: all 0.3s ease-in-out;
+  animation: fadeOut 8.5s ease-in-out forwards;
+  position: absolute;
+  top: 80px;
+  margin: 0 30%;
+  text-align: center;
+}
+
+/* alert animation fade out */
+@keyframes fadeOut{
+  0 {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
 /**************/
 /* NAVBAR     */
 /**************/
@@ -470,9 +490,16 @@ footer li {
   .apresentacao p {
     font-size: 1.3em;
   }
+  .alert {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 770px){
+  .alert{
+    margin: 0 15%;
+  }
+
   #sobre {
     display: flex;
     flex-direction: column-reverse;

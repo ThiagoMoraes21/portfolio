@@ -2,6 +2,8 @@ let express    = require('express'),
     mongoose   = require('mongoose'),
     seedDB     = require('./seeds'),
     bodyParser = require('body-parser'),
+    flash      = require('connect-flash'),
+
     app        = express(),
     port       = process.env.PORT || 3000;
 
@@ -22,6 +24,19 @@ app.use(bodyParser.json());
 //  Static folder and view engine
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
+
+//  Setup express-session and flash
+app.use(flash());
+app.use(require('express-session')({
+  secret: 'Bob is the best dog of the world!',
+  resave: false,
+  saveUninitialized: false
+}));
+app.use(function(req, res, next){
+  res.locals.error =  req.flash('error');
+  res.locals.success =  req.flash('success');
+  next();
+});
 
 //  defining routes
 app.use('/', indexRoute);
