@@ -22,3 +22,9 @@ $(window).scroll(function() {
 				}
 		});
 }).scroll();
+
+
+//  Initialize tooltips
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

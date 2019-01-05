@@ -5,6 +5,7 @@ body, html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-display: swap;
 }
 
 img {
@@ -167,9 +168,10 @@ nav {
 
 .scroll-angle {
   position: absolute;
-  margin: 60vh auto;
   width: 30px;
   height: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   transform: rotate(45deg);
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
