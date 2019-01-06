@@ -1,0 +1,1 @@
+var mongoose=require("mongoose"),projectSchema=new mongoose.Schema({title:String,image:String,about:String,summary:String,technologies:[String],siteLink:String,githubLink:String});module.exports=mongoose.model("Project",projectSchema);
