@@ -14,23 +14,6 @@ let indexRoute   = require('./routes/index'),
 //===========
 //  SETUP
 //===========
-async function runTransactionWithRetry(txnFunc, client, session) {
-  try {
-    await mongoose.connect('mongodb://thiago:323Sowhat@ds151354.mlab.com:51354/portfolio', { useNewUrlParser: true });
-  } catch (error) {
-    console.log('Transaction aborted. Caught exception during transaction.');
-
-    // If transient error, retry the whole transaction
-    if (error.errorLabels && error.errorLabels.indexOf('TransientTransactionError') >= 0) {
-      console.log('TransientTransactionError, retrying transaction ...');
-      await runTransactionWithRetry(txnFunc, client, session);
-    } else {
-      throw error;
-    }
-  }
-}
-
-mongoose.Promise = global.Promise;
 //  Connecting to mongoDB
 // mongoose.connect('mongodb://localhost/portfolio', { useNewUrlParser: true });
 mongoose.connect('mongodb://thiago:323Sowhat@ds151354.mlab.com:51354/portfolio', { useNewUrlParser: true });
