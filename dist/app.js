@@ -16,7 +16,7 @@ let indexRoute   = require('./routes/index'),
 //===========
 async function runTransactionWithRetry(txnFunc, client, session) {
   try {
-    await txnFunc(client, session);
+    await mongoose.connect('mongodb://thiago:323Sowhat@ds151354.mlab.com:51354/portfolio', { useNewUrlParser: true });
   } catch (error) {
     console.log('Transaction aborted. Caught exception during transaction.');
 
@@ -29,6 +29,7 @@ async function runTransactionWithRetry(txnFunc, client, session) {
     }
   }
 }
+
 mongoose.Promise = global.Promise;
 //  Connecting to mongoDB
 // mongoose.connect('mongodb://localhost/portfolio', { useNewUrlParser: true });
