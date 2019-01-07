@@ -15,7 +15,8 @@ let indexRoute   = require('./routes/index'),
 //  SETUP
 //===========
 //  Connecting to mongoDB
-mongoose.connect('mongodb://localhost/portfolio', { useNewUrlParser: true });
+// mongoose.connect('mongodb://localhost/portfolio', { useNewUrlParser: true });
+mongoose.connect('mongodb://thiago:323Sowhat@ds151354.mlab.com:51354/portfolio', { useNewUrlParser: true });
 
 //  Setup body-parser
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -43,7 +44,7 @@ app.use('/', indexRoute);
 app.use('/project', projectRoute);
 
 // Create projects in the DB
-seedDB();
+// seedDB();
 
 //  If page not found
 app.get('*', function(req, res){
