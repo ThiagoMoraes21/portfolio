@@ -43,11 +43,11 @@ app.use('/', indexRoute);
 app.use('/project', projectRoute);
 
 // Create projects in the DB
-// seedDB();
+seedDB();
 
 //  If page not found
 app.get('*', function(req, res){
-  res.send('ERROR 404 (PAGE NOT FOUND)');
+  res.render('notfound');
 });
 
 app.listen(port, process.env.IP, function(){

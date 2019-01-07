@@ -89,6 +89,16 @@ img {
   }
 }
 
+
+.notfound-header {
+  padding: 0;
+}
+
+.notfound-header h1 {
+  top: 20vh;
+  font-weight: bolder;
+}
+
 /**************/
 /* NAVBAR     */
 /**************/
