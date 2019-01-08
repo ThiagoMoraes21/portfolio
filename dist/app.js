@@ -17,6 +17,7 @@ let indexRoute   = require('./routes/index'),
 //  Connecting to mongoDB
 // mongoose.connect('mongodb://localhost/portfolio', { useNewUrlParser: true });
 mongoose.connect('mongodb://thiago:323Sowhat@ds151354.mlab.com:51354/portfolio', { useNewUrlParser: true });
+mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function callback () {

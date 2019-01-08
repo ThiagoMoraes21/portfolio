@@ -25,6 +25,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "jquery": "^3.3.1",
+    "mongodb": "^3.1.10",
     "mongoose": "^5.4.0",
     "nodemailer": "^5.0.0"
   },
