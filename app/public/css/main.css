@@ -182,12 +182,13 @@ nav {
   width: 30px;
   height: 30px;
   left: 50%;
-  transform: translateX(-50%);
-  transform: rotate(45deg);
+  border-color: var(--dark);
+  /* transform: translateX(-50%); */
+  transform: rotate(45deg) translateX(-50%);
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
   font-size: 0;
-  animation: moveAngle 1.9s ease-in-out infinite;
+  animation: moveAngle 2s ease-in-out infinite;
 }
 
 /* Animação da seta */
@@ -200,7 +201,7 @@ nav {
     opacity: 1;
   }
   100% {
-    margin-top: 68vh;
+    margin-top: 70vh;
     opacity: 0;
   }
 }
@@ -497,16 +498,29 @@ footer li {
 
 
 /* Adaptando o tamanho das fontes */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px) {
+  #home {
+    background-attachment: scroll;
+    background-position: 81%;
+  }
+  .apresentacao {
+    top: 30%;
+  }
   .apresentacao h1 {
-    font-size: 3em;
+    font-size: 3.5em;
   }
 
   .apresentacao p {
-    font-size: 1.3em;
+    font-size: 1.63em;
   }
   .alert {
     margin: 0;
+  }
+  .navbar-brand {
+    margin-left: 4vw!important;
+  }
+  .scroll-angle {
+    top: 26%;
   }
 }
 
@@ -515,18 +529,20 @@ footer li {
     margin: 0 15%;
   }
 
-  #sobre {
-    display: flex;
-    flex-direction: column-reverse;
-  }
   .foto {
     background-image: url('../img/myface.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top 30% center;
-    background-attachment: fixed;
+    background-position: top 17% center;
+    background-attachment: scroll;
+    background-size: 89%;
     filter: saturate(0);
-    min-height: 21vh;
+    min-height: 40vh;
+  }
+
+  #sobre {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .sobre {
@@ -547,6 +563,10 @@ footer li {
     text-align: center;
     margin-bottom: 5px;
     margin-left: 25px;
+  }
+
+  #skills a {
+    margin-top: 15%;
   }
 
   .card-img {
