@@ -146,6 +146,10 @@ nav {
   color: #fff;
 }
 
+.jumbotron {
+  padding: 0;
+}
+
 .logo {
   color: var(--yellow);
   font-weight: normal;
@@ -505,6 +509,8 @@ footer li {
   }
   .apresentacao {
     top: 30%;
+    width: 100%;
+    padding: 7px;
   }
   .apresentacao h1 {
     font-size: 3.5em;
