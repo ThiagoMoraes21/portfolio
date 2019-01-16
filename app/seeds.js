@@ -73,7 +73,7 @@ var data = [
   },
   {
       title: 'Anything Blog',
-      image: '../img/projects/anything_blog.jpg',
+      image: '../img/projects/blog.jpg',
       summary: 'Web App onde o usuário pode criar e editar artigos sobre temas variádos!',
       technologies: ['Semantic UI', 'HTML5+CSS3', 'Javascript', 'NodeJS', 'Express', 'REST Pattern'],
       githubLink: 'https://github.com/ThiagoMoraes21/WebDev_BootCamp/tree/master/Projects/Blog',
