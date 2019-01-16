@@ -19,7 +19,7 @@ let indexRoute   = require('./routes/index'),
 mongoose.connect('mongodb://thiago:323Sowhat@ds151354.mlab.com:51354/portfolio', { useNewUrlParser: true });
 
 // Create projects in the DB
-seedDB();
+// seedDB();
 
 //  Setup body-parser
 app.use(bodyParser.urlencoded({ extended: false }));
