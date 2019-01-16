@@ -5,7 +5,8 @@ let express    = require('express'),
     flash      = require('connect-flash'),
 
     app        = express(),
-    port       = process.env.PORT || 3000;
+    port       = process.env.PORT || 3000,
+    url        = process.env.DATABASEURL || 'mongodb://localhost/portfolio';
 
 //  requiring routes
 let indexRoute   = require('./routes/index'),
@@ -15,7 +16,7 @@ let indexRoute   = require('./routes/index'),
 //  SETUP
 //===========
 //  Connecting to mongoDB
-mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
+mongoose.connect(url, {useNewUrlParser: true});
 
 // Create projects in the DB
 // seedDB();
