@@ -16,7 +16,9 @@ let indexRoute   = require('./routes/index'),
 //===========
 //  Connecting to mongoDB
 // mongoose.connect('mongodb://localhost/portfolio', { useNewUrlParser: true });
-mongoose.connect('mongodb://thiago:323Sowhat@ds151354.mlab.com:51354/portfolio', { useNewUrlParser: true });
+// mongoose.connect('mongodb://thiago:323Sowhat@ds151354.mlab.com:51354/portfolio', { useNewUrlParser: true });
+
+mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
 
 // Create projects in the DB
 // seedDB();

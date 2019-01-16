@@ -59,7 +59,6 @@ var data = [
     summary: 'YelpCamp é um web-app onde você pode encontrar campings no mundo todo e muito mais!',
     technologies: ['HTML5+CSS3', 'Javascript', 'Bootstrap 3', 'MongoDB', 'NodeJS', 'Express'],
     githubLink: 'https://github.com/ThiagoMoraes21/WebDev_BootCamp/tree/master/Projects/YelpCamp',
-    siteLink: 'http://yelpcamp-webapp.herokuapp.com/campgrounds',
     about: `Este é um dos projetos propostos no <a class="text-dark" href="https://www.udemy.com/the-web-developer-bootcamp/">The Web Developer Boot Camp</a>.
      E se trata de um Web App no qual o usuário pode postar, avaliar e comentar Campings espalhado pelo mundo.
      <br><br>
@@ -77,7 +76,6 @@ var data = [
       summary: 'Web App onde o usuário pode criar e editar artigos sobre temas variádos!',
       technologies: ['Semantic UI', 'HTML5+CSS3', 'Javascript', 'NodeJS', 'Express', 'REST Pattern'],
       githubLink: 'https://github.com/ThiagoMoraes21/WebDev_BootCamp/tree/master/Projects/Blog',
-      siteLink: 'https://anything-blog.herokuapp.com/blogs',
       about: `RESTful web-app que implementa as funcionalidades fundamentais de um Blog.
        Este também é um dos projetos propostos no  <a class="text-dark" href="https://www.udemy.com/the-web-developer-bootcamp/">The Web Developer Boot Camp</a>.
        <br><br>
