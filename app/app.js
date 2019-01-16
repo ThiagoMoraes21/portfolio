@@ -6,7 +6,7 @@ let express    = require('express'),
 
     app        = express(),
     port       = process.env.PORT || 3000,
-    url        = process.env.DATABASEURL || 'mongodb://localhost/portfolio';;
+    url        = process.env.DATABASEURL || 'mongodb://localhost/portfolio';
 
 //  requiring routes
 let indexRoute   = require('./routes/index'),
@@ -16,9 +16,6 @@ let indexRoute   = require('./routes/index'),
 //  SETUP
 //===========
 //  Connecting to mongoDB
-// mongoose.connect('mongodb://localhost/portfolio', { useNewUrlParser: true });
-// mongoose.connect('mongodb://thiago:323Sowhat@ds151354.mlab.com:51354/portfolio', { useNewUrlParser: true });
-
 mongoose.connect(url, {useNewUrlParser: true});
 
 // Create projects in the DB
