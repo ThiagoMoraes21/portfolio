@@ -2,7 +2,9 @@ const express    = require('express'),
     router     = express.Router(),
     mongoose   = require('mongoose'),
     Project    = require('../models/project'),
-    nodemailer = require('nodemailer');
+    nodemailer = require('nodemailer'),
+    user       = process.env.USER,
+    pass       = process.env.PASS;
 
 // INDEX - Mostra todos os projetos
 router.get('/', function(req, res){
@@ -35,8 +37,8 @@ router.post('/', function(req, res){
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-        user: 'portfolio-message@outlook.com', // generated ethereal user
-        pass: '323@Sowhatthiago!' // generated ethereal password
+        user: user, // generated ethereal user
+        pass: pass // generated ethereal password
     },
     tls: {
       // do not fail on invalid certs
